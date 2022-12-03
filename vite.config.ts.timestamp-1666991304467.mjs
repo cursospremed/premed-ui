@@ -1,7 +1,7 @@
 // vite.config.ts
-import { defineConfig } from "file:///E:/Trabajo/ECOSUR/Repositorios/premed-ui/node_modules/vite/dist/node/index.js";
+import { defineConfig } from "./node_modules/vite/dist/node/index.js";
 import { resolve } from "path";
-import react from "file:///E:/Trabajo/ECOSUR/Repositorios/premed-ui/node_modules/@vitejs/plugin-react/dist/index.mjs";
+import react from "./node_modules/@vitejs/plugin-react/dist/index.mjs";
 
 // package.json
 var peerDependencies = {
@@ -20,9 +20,9 @@ var peerDependencies = {
 };
 
 // vite.config.ts
-import dts from "file:///E:/Trabajo/ECOSUR/Repositorios/premed-ui/node_modules/vite-plugin-dts/dist/index.mjs";
-import tsconfigPaths from "file:///E:/Trabajo/ECOSUR/Repositorios/premed-ui/node_modules/vite-tsconfig-paths/dist/index.mjs";
-var __vite_injected_original_dirname = "E:\\Trabajo\\ECOSUR\\Repositorios\\premed-ui";
+import dts from "./node_modules/vite-plugin-dts/dist/index.mjs";
+import tsconfigPaths from "./node_modules/vite-tsconfig-paths/dist/index.mjs";
+var __vite_injected_original_dirname = "./";
 var vite_config_default = defineConfig({
   build: {
     sourcemap: true,
