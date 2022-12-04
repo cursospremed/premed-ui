@@ -14,12 +14,13 @@ export type Elemento = {
 
 interface PremedContainerProps {
   data: Elemento[];
+  fullWidth?: boolean;
 }
 
 /**
  * Primary UI component for user interaction
  */
-const PremedContainer = ({ data = [] }: PremedContainerProps) => {
+const PremedContainer = ({ data = [], fullWidth = false }: PremedContainerProps) => {
   let widthSum = 0;
   let elementSum = 0;
   let widthRest = 12;
@@ -116,7 +117,7 @@ const PremedContainer = ({ data = [] }: PremedContainerProps) => {
                   )}
                 </Box>
               </Grid>
-              <Box>{elemento.componente}</Box>
+              <Box sx={{ width: fullWidth == true ? 1 : 'auto' }}>{elemento.componente}</Box>
             </Grid>
           </Grid>
         </Grid>

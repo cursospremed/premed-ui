@@ -167,7 +167,7 @@ export default {
                 }}
               >
                 <Primary />
-                <PremedContainer data={componentes} />
+                <PremedContainer data={componentes} fullWidth />
                 <p></p>
                 <Divider sx={{ width: '80%' }} />
               </Grid>
@@ -188,4 +188,5 @@ const Template: ComponentStory<typeof PremedContainer> = (args) => <PremedContai
 export const Estandar = Template.bind({});
 Estandar.args = {
   data: componentes,
+  fullWidth: true,
 };
