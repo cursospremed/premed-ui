@@ -1,3 +1,5 @@
+import PremedButtonSection from './components/Buttons/ButtonSection';
+
 import PremedButtonFilePicker from './components/ButtonFilePicker';
 import PremedCommentsCard from './components/CommentsCard';
 import PremedProfileCard from './components/ProfileCard';
@@ -15,6 +17,10 @@ import PremedFormCheckBox from './components/Form/FormCheckBox';
 export type { Comentario } from './components/CommentsCard/types';
 export type { Componente } from './components/Tab';
 export type { Elemento } from './components/Container';
+
+export {
+  PremedButtonSection,
+}
 
 export {
   PremedButtonFilePicker,
