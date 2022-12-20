@@ -121,10 +121,9 @@ export const PremedPaletteDark = responsiveFontSizes(
   }),
 );
 
-// eslint-disable-next-line react/prop-types
-const PremedTheme: React.FC<{ children: React.ReactNode; themeName: string }> = ({
-  children,
+const PremedTheme: React.FC<{ themeName: string; children: React.ReactNode }> = ({
   themeName,
+  children,
 }) => {
   return (
     <ThemeProvider theme={themeName}>
